@@ -36,6 +36,7 @@ namespace PlatformIds
 		"n64", // nintendo 64
 		"nds", // nintendo DS
 		"nes", // nintendo entertainment system
+		"marketplace",
 		"gb", // game boy
 		"gba", // game boy advance
 		"gbc", // game boy color

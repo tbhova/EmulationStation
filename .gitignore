@@ -3,6 +3,7 @@
 *.lo
 *.o
 
+
 # Compiled Dynamic libraries
 *.so
 
@@ -34,3 +35,6 @@ Makefile
 .cproject
 .project
 .settings/
+
+# IntelliJ
+.idea

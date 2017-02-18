@@ -119,7 +119,12 @@ bool SystemView::input(InputConfig* config, Input input)
 		if(config->isMappedTo("a", input))
 		{
 			stopScrolling();
-			ViewController::get()->goToGameList(getSelected());
+			if (getSelected()->getName() == "marketplace"){
+				std::system("/usr/bin/gimp");
+			}
+			else {
+				ViewController::get()->goToGameList(getSelected());
+			}
 			return true;
 		}
 	}else{
@@ -179,6 +184,9 @@ void SystemView::onCursorChanged(const CursorState& state)
 		
 		if (getSelected()->getName() == "retropie")
 			ss << "CONFIGURATION";
+		else if (getSelected()->getName() == "marketplace"){
+			ss << "LAUNCH MARKETPLACE";
+		}
 		// only display a game count if there are at least 2 games
 		else if(gameCount > 1)
 			ss << gameCount << " GAMES AVAILABLE";
