@@ -473,7 +473,7 @@ std::map<std::string, ThemeSet> ThemeData::getThemeSets()
 	static const size_t pathCount = 2;
 	fs::path paths[pathCount] = { 
 		"/etc/emulationstation/themes", 
-		getHomePath() + "/.emulationstation/themes" 
+		getHomePath() + "/.emulationstationmarketplace/themes"
 	};
 
 	fs::directory_iterator end;

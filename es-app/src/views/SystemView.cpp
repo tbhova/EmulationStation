@@ -8,6 +8,7 @@
 #include "SystemData.h"
 #include "Settings.h"
 #include "Util.h"
+#include <cstdlib>
 
 #define SELECTED_SCALE 1.5f
 #define LOGO_PADDING ((logoSize().x() * (SELECTED_SCALE - 1)/2) + (mSize.x() * 0.06f))
@@ -120,7 +121,8 @@ bool SystemView::input(InputConfig* config, Input input)
 		{
 			stopScrolling();
 			if (getSelected()->getName() == "marketplace"){
-				std::system("/usr/bin/gimp");
+				//std::system("/usr/bin/gimp");
+				exit(0);
 			}
 			else {
 				ViewController::get()->goToGameList(getSelected());
@@ -185,7 +187,7 @@ void SystemView::onCursorChanged(const CursorState& state)
 		if (getSelected()->getName() == "retropie")
 			ss << "CONFIGURATION";
 		else if (getSelected()->getName() == "marketplace"){
-			ss << "LAUNCH MARKETPLACE";
+			ss << "EXIT MARKETPLACE";
 		}
 		// only display a game count if there are at least 2 games
 		else if(gameCount > 1)

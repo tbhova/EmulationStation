@@ -129,6 +129,19 @@ bool verifyHomeFolderExists()
 		}
 	}
 
+	//make sure marketplace directory also exists (theme location)
+	std::string configDirMarketplace = home + "/.emulationstationmarketplace";
+	if(!fs::exists(configDirMarketplace))
+	{
+		std::cout << "Creating config directory \"" << configDirMarketplace << "\"\n";
+		fs::create_directory(configDirMarketplace);
+		if(!fs::exists(configDirMarketplace))
+		{
+			std::cerr << "Config directory could not be created!\n";
+			return false;
+		}
+	}
+
 	return true;
 }
 
