@@ -39,3 +39,5 @@ Makefile
 
 # IntelliJ
 .idea
+
+.cbp
