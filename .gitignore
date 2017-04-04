@@ -39,3 +39,6 @@ Makefile
 
 # IntelliJ
 .idea
+
+*.cbp
+cmake-build-debug
