@@ -1,6 +1,6 @@
 #pragma once
 
-#include "pugixml/src/pugixml.hpp"
+#include "pugixml/pugixml.hpp"
 #include <string>
 #include <map>
 #include "GuiComponent.h"
