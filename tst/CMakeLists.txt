@@ -16,9 +16,12 @@ download_project(
 
 add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR} EXCLUDE_FROM_ALL)
 
-set(test_SRCS
+set(test_SOURCES
     src/gtestmain.cpp)
 
-add_executable(runUnitTests src/gtestmain.cpp ${test_SRCS})
-target_link_libraries(runUnitTests gtest gmock core)
+set(test_HEADERS
+        )
+
+add_executable(runUnitTests ${test_SOURCES} ${test_HEADERS})
+target_link_libraries(runUnitTests gtest gmock marketplaceServer)
 #add_test(runUnitTests runUnitTests) #included in all tutorials but I don't know what it actually does.
