@@ -2,3 +2,23 @@ project("test")
 
 include(CTest)
 enable_testing()
+
+set(REPO ${CMAKE_CURRENT_SOURCE_DIR}/..)
+
+#set(gtest_disable_pthreads on) #needed in MinGW
+include(${REPO}/DownloadProject/DownloadProject.cmake)
+download_project(
+        PROJ                googletest
+        GIT_REPOSITORY      https://github.com/google/googletest.git
+        GIT_TAG             master
+        UPDATE_DISCONNECTED 1
+)
+
+add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR} EXCLUDE_FROM_ALL)
+
+set(test_SRCS
+    src/gtestmain.cpp)
+
+add_executable(runUnitTests src/gtestmain.cpp ${test_SRCS})
+target_link_libraries(runUnitTests gtest gmock core)
+#add_test(runUnitTests runUnitTests) #included in all tutorials but I don't know what it actually does.

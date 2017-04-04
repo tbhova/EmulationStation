@@ -13,6 +13,13 @@ make
 
 ```
 
+# Add a remote for Server code (needed for proto files)
+
+```
+git remote add EmulationServer https://github.com/tbhova/Emulation_ROM_Market_Server.git
+git checkout -b serverBranch EmulationServer/master
+```
+
 # Updating the Server code proto files
 
 See [git book](https://git-scm.com/book/en/v1/Git-Tools-Subtree-Merging)
