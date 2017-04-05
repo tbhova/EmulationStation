@@ -20,7 +20,7 @@ set(test_SOURCES
     src/gtestmain.cpp)
 
 set(test_HEADERS
-        )
+        src/testuserserver.h)
 
 add_executable(runUnitTests ${test_SOURCES} ${test_HEADERS})
 target_link_libraries(runUnitTests gtest gmock marketplaceServer)

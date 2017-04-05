@@ -43,3 +43,5 @@ Makefile
 *.cbp
 cmake-build-debug
 runUnitTests
+*.pb.h
+*.pb.cc
