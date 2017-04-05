@@ -42,3 +42,4 @@ Makefile
 
 *.cbp
 cmake-build-debug
+rununittests
