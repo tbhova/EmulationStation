@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "horgan.UserDownloadServer";
+option java_outer_classname = "UserDownloadServerProto";
+package UserDownloadServer;
+
+// The user service definition.
+service UserDownloadServer {
+    // check if a user can download a given game
+    rpc DownloadGame (DownloadRequest) returns (DownloadResponse) {}
+
+    // return a list of purchased games for a given user
+    rpc AvailableDownloads (UserDownloadListRequest) returns (DownloadsList) {}
+}
+
+// The request query containing the username and game id to see if a user can download a game
+message DownloadRequest {
+    string username = 1;
+    string password = 2;
+    string gameId = 3;
+}
+
+// The response message containing either the download URL or error
+message DownloadResponse {
+    bool available = 1;
+    string S3DownloadLink = 2;
+}
+
+// per username give a list of games that the user can download
+message UserDownloadListRequest {
+    string username = 1;
+}
+
+message Game {
+    string id = 1;
+}
+
+message DownloadsList {
+    repeated Game games = 1;
+}

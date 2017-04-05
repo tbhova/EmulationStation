@@ -10,7 +10,6 @@ Follow [C++ GRPC isntructions](https://github.com/grpc/grpc/blob/master/INSTALL.
 ```
 cd marketplace
 make
-
 ```
 
 # Add a remote for Server code (needed for proto files)

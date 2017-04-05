@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "horgan.AvailableGameServer";
+option java_outer_classname = "AvailableGameServerProto";
+package AvailableGameServer;
+
+// The user service definition.
+service AvialableGameServer {
+    rpc GetAvailableGamesList (GameFilters) returns (GameIdList) {}
+    rpc GetGameDetails (GameId) returns (GameDetails) {}
+}
+
+// The request query containing the any search filters (none supported yet)
+message GameFilters {
+    string filters = 1;
+}
+
+// The response message containing the list of game ids
+message GameIdList {
+    repeated GameId ids = 1;
+}
+
+message GameId {
+    string id = 1;
+}
+
+message GameDetails {
+    string id = 1;
+    string title = 2;
+    string console = 3;
+    string releaseDate = 4;
+    string developer = 5;
+    string publisher = 6;
+    string genre = 7;
+    int32 players = 8;
+    float price = 9;
+}
