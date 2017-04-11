@@ -13,11 +13,11 @@ using AvailableGameServer::GameDetails;
 using AvailableGameServer::GameFilters;
 using AvailableGameServer::GameId;
 using AvailableGameServer::GameIdList;
+using AvailableGameServer::AvialableGameServer;
 
-GameServer::GameServer() : GameServer("127.0.0.1") {}
+//GameServer::GameServer() : GameServer("127.0.0.1") {}
 
-GameServer::GameServer(const std::string &ip) {
-    const string serverLocation = ip + ":50051";
-    grpc::CreateChannel(ip, grpc::InsecureChannelCredentials());
+GameServer::GameServer(shared_ptr<grpc::Channel> channel)
+        : serverStub(AvialableGameServer::NewStub(channel)) {
 //    AvailableGameServer::
 }
