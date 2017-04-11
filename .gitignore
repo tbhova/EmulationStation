@@ -50,3 +50,6 @@ runUnitTests
 # Server protobuf files
 *.pb.h
 *.pb.cc
+
+# Dolphin File manager preferences
+.directory
