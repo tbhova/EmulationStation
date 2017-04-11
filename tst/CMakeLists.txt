@@ -23,5 +23,5 @@ set(test_HEADERS
         src/TestUserServer.h src/TestDownloadServer.h src/TestGameServer.h)
 
 add_executable(runUnitTests ${test_SOURCES} ${test_HEADERS})
-target_link_libraries(runUnitTests gtest gmock marketplaceServer)
+target_link_libraries(runUnitTests gtest gmock marketplace)
 #add_test(runUnitTests runUnitTests) #included in all tutorials but I don't know what it actually does.

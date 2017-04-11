@@ -3,12 +3,15 @@
 
 #include <string>
 
+#include "../protos/AvailableGameServer.grpc.pb.h"
+
 class GameServer {
 public:
-    explicit GameServer(const std::string ip);
+    GameServer();
+    explicit GameServer(const std::string &ip);
 
 private:
-
+    std::unique_ptr<AvailableGameServer::AvialableGameServer::Stub> serverStub;
 };
 
 
