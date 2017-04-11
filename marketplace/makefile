@@ -1,6 +1,7 @@
 all: Update MarketServer UserServer UserDownloadServer AvailableGameServer
 
 Update:
+	mkdir -p protos
 #	git submodule update --remote
 
 MarketServer: ../marketplaceServer/src/MarketServer/MarketServer.proto

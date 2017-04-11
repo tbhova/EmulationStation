@@ -17,10 +17,10 @@ download_project(
 add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR} EXCLUDE_FROM_ALL)
 
 set(test_SOURCES
-    src/gtestmain.cpp)
+        src/gTestMain.cpp)
 
 set(test_HEADERS
-        src/testuserserver.h)
+        src/TestUserServer.h src/TestDownloadServer.h src/TestGameServer.h)
 
 add_executable(runUnitTests ${test_SOURCES} ${test_HEADERS})
 target_link_libraries(runUnitTests gtest gmock marketplaceServer)
