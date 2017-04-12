@@ -32,4 +32,4 @@ set(proto_HEADERS
 
 include_directories(${COMMON_INCLUDE_DIRS} ../marketplace/src)
 add_library(marketplace STATIC ${proto_SOURCES} ${proto_HEADERS} ${marketplace_SOURCES} ${marketplace_HEADERS})
-target_link_libraries(marketplace ${COMMON_LIBRARIES} grpc++_unsecure grpc)
+target_link_libraries(marketplace ${COMMON_LIBRARIES} grpc++_unsecure grpc gpr ${PROTOBUF_LIBRARY} ${_gRPC_ALLTARGETS_LIBRARIES})
