@@ -2,10 +2,11 @@
 #define EMULATIONSTATION_ALL_DOWNLOADSERVER_H
 
 #include <string>
+#include <grpc++/channel.h>
 
 class DownloadServer {
 public:
-    explicit DownloadServer(const std::string ip);
+    explicit DownloadServer(std::shared_ptr<grpc::Channel> channel);
 
 private:
 };

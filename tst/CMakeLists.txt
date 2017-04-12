@@ -16,6 +16,10 @@ download_project(
 
 add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR} EXCLUDE_FROM_ALL)
 
+if (TARGET runUnitTests)
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../marketplace ${CMAKE_CURRENT_BINARY_DIR}/marketplace)
+endif()
+
 set(test_SOURCES
         src/gTestMain.cpp)
 
@@ -23,5 +27,5 @@ set(test_HEADERS
         src/TestUserServer.h src/TestDownloadServer.h src/TestGameServer.h)
 
 add_executable(runUnitTests ${test_SOURCES} ${test_HEADERS})
-target_link_libraries(runUnitTests gtest gmock marketplace)
+target_link_libraries(runUnitTests gtest gmock)
 #add_test(runUnitTests runUnitTests) #included in all tutorials but I don't know what it actually does.

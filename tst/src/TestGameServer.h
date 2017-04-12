@@ -3,6 +3,8 @@
 
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
+
+#include <grpc++/security/credentials.h>
 #include <grpc++/channel.h>
 #include <grpc++/create_channel.h>
 
@@ -11,13 +13,13 @@
 using namespace testing;
 using namespace std;
 
-class GameServerTest {
+class GameServerTest : public ::testing::Test {
 protected:
     GameServer gameServer = GameServer(grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials()));
 };
 
 TEST_F(GameServerTest, Test) {
-    
+
 }
 
 #endif //EMULATIONSTATION_ALL_TESTGAMESERVER_H

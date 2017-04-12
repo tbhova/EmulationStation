@@ -211,5 +211,9 @@ set(LIBRARY_OUTPUT_PATH ${dir} CACHE PATH "Build directory" FORCE)
 add_subdirectory("external")
 add_subdirectory("es-core")
 add_subdirectory("es-app")
-add_subdirectory("marketplace")
 add_subdirectory("tst")
+
+if (NOT TARGET runUnitTests)
+    add_subdirectory("marketplace")
+endif()
+

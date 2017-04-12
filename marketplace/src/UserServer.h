@@ -2,10 +2,11 @@
 #define EMULATIONSTATION_ALL_USERSERVER_H
 
 #include <string>
+#include <grpc++/channel.h>
 
 class UserServer {
 public:
-    explicit UserServer(const std::string ip);
+    explicit UserServer(std::shared_ptr<grpc::Channel> channel);
 
 private:
 
