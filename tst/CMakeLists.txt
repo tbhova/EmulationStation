@@ -20,8 +20,11 @@ set(test_SOURCES
 set(test_HEADERS
         src/TestUserServer.h src/TestDownloadServer.h src/TestGameServer.h)
 
+find_package(Protobuf REQUIRED)
+include_directories(${PROTOBUF_INCLUDE_DIRS})
+
 add_executable(runUnitTests ${test_SOURCES} ${test_HEADERS})
-target_link_libraries(runUnitTests gtest gmock marketplace grpc++_unsecure grpc gpr ${PROTOBUF_LIBRARY} ${_gRPC_ALLTARGETS_LIBRARIES})
+target_link_libraries(runUnitTests gtest gmock grpc++_unsecure grpc gpr ${PROTOBUF_LIBRARIES} ${_gRPC_ALLTARGETS_LIBRARIES} marketplace)
 #add_test(runUnitTests runUnitTests) #included in all tutorials but I don't know what it actually does.
 
 
