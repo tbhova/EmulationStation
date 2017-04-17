@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="emulationstation-all"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\es-core\;CMake Files\es-app\;CMake Files\CMake\;CMake Files\CMake\Packages\;CMake Files\CMake\Utils\;CMake Files\external\;CMake Files\external\nanosvg\;CMake Files\external\pugixml\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nanosvg">
+				<Option output="/home/andy/workspace/EmulationStation/libnanosvg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation/external/nanosvg"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external/nanosvg"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 nanosvg"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nanosvg/fast">
+				<Option output="/home/andy/workspace/EmulationStation/libnanosvg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation/external/nanosvg"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external/nanosvg"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 nanosvg/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/nanosvg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pugixml">
+				<Option output="/home/andy/workspace/EmulationStation/libpugixml.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation/external/pugixml"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external/pugixml"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 pugixml"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pugixml/fast">
+				<Option output="/home/andy/workspace/EmulationStation/libpugixml.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation/external/pugixml"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external/pugixml"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 pugixml/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/external/pugixml/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="es-core">
+				<Option output="/home/andy/workspace/EmulationStation/libes-core.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation/es-core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/freetype2"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/vlc"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external"/>
+					<Add directory="/home/andy/workspace/EmulationStation/es-core/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 es-core"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="es-core/fast">
+				<Option output="/home/andy/workspace/EmulationStation/libes-core.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation/es-core"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/freetype2"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/vlc"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external"/>
+					<Add directory="/home/andy/workspace/EmulationStation/es-core/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 es-core/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="emulationstation">
+				<Option output="/home/andy/workspace/EmulationStation/emulationstation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/freetype2"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/vlc"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external"/>
+					<Add directory="/home/andy/workspace/EmulationStation/es-core/src"/>
+					<Add directory="/home/andy/workspace/EmulationStation/es-app/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 emulationstation"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="emulationstation/fast">
+				<Option output="/home/andy/workspace/EmulationStation/emulationstation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andy/workspace/EmulationStation"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENGL_DESKTOP"/>
+					<Add option="-DEIGEN_DONT_ALIGN"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/freetype2"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/vlc"/>
+					<Add directory="/home/andy/workspace/EmulationStation/external"/>
+					<Add directory="/home/andy/workspace/EmulationStation/es-core/src"/>
+					<Add directory="/home/andy/workspace/EmulationStation/es-app/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 emulationstation/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/andy/workspace/EmulationStation/es-app/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/ResourceUtil.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/Resources.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/arrow_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/busy_0_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/busy_1_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/busy_2_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/busy_3_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/button_filled_png.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/button_png.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/checkbox_checked_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/checkbox_unchecked_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/fav_add_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/fav_remove_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/frame_png.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_analog_down_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_analog_left_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_analog_right_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_analog_thumb_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_analog_up_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_a_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_b_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_l_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_r_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_select_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_start_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_x_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_button_y_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_dpad_all_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_dpad_down_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_dpad_left_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_dpad_leftright_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_dpad_right_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_dpad_up_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/help_dpad_updown_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/off_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/on_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/opensans_hebrew_condensed_light_ttf.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/opensans_hebrew_condensed_regular_ttf.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/option_arrow_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/scroll_gradient_png.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/slider_knob_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/splash_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/star_filled_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/star_unfilled_svg.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/textinput_ninepatch_active_png.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/textinput_ninepatch_png.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/data/converted/window_icon_256_png.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/EmulationStation.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/FileData.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/FileData.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/FileSorts.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/FileSorts.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/Gamelist.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/Gamelist.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/MameNameMap.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/MetaData.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/MetaData.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/PlatformId.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/PlatformId.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/ScraperCmdLine.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/ScraperCmdLine.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/SystemData.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/SystemData.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/VolumeControl.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/VolumeControl.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/animations/LaunchAnimation.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/animations/MoveCameraAnimation.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/components/AsyncReqComponent.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/components/AsyncReqComponent.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/components/RatingComponent.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/components/RatingComponent.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/components/ScraperSearchComponent.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/components/ScraperSearchComponent.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/components/TextListComponent.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiFastSelect.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiFastSelect.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiGameScraper.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiGameScraper.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiGamelistOptions.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiGamelistOptions.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiMenu.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiMenu.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiMetaDataEd.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiMetaDataEd.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiScraperMulti.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiScraperMulti.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiScraperStart.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiScraperStart.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiSettings.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/guis/GuiSettings.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/main.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/scrapers/GamesDBScraper.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/scrapers/GamesDBScraper.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/scrapers/Scraper.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/scrapers/Scraper.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/SystemView.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/SystemView.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/ViewController.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/ViewController.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/BasicGameListView.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/BasicGameListView.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/DetailedGameListView.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/DetailedGameListView.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/GridGameListView.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/GridGameListView.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/IGameListView.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/IGameListView.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/ISimpleGameListView.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/ISimpleGameListView.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/VideoGameListView.cpp">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/src/views/gamelist/VideoGameListView.h">
+			<Option target="emulationstation"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/AsyncHandle.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/AudioManager.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/AudioManager.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/GuiComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/GuiComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/HelpStyle.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/HelpStyle.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/HttpReq.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/HttpReq.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/ImageIO.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/ImageIO.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/InputConfig.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/InputConfig.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/InputManager.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/InputManager.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Log.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Log.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Renderer.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Renderer_draw_gl.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Renderer_init_sdlgl.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Settings.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Settings.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Sound.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Sound.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/ThemeData.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/ThemeData.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Util.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Util.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Window.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/Window.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/animations/Animation.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/animations/AnimationController.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/animations/AnimationController.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/animations/LambdaAnimation.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/AnimatedImageComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/AnimatedImageComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/BusyComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/BusyComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ButtonComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ButtonComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ComponentGrid.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ComponentGrid.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ComponentList.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ComponentList.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/DateTimeComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/DateTimeComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/HelpComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/HelpComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/IList.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ImageComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ImageComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ImageGridComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/MenuComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/MenuComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/NinePatchComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/NinePatchComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/OptionListComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ScrollableContainer.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/ScrollableContainer.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/SliderComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/SliderComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/SwitchComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/SwitchComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/TextComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/TextComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/TextEditComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/TextEditComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/VideoComponent.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/components/VideoComponent.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiDetectDevice.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiDetectDevice.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiInputConfig.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiInputConfig.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiMsgBox.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiMsgBox.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiTextEditPopup.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/guis/GuiTextEditPopup.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/platform.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/platform.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/Font.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/Font.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/ResourceManager.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/ResourceManager.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/TextureData.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/TextureData.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/TextureDataManager.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/TextureDataManager.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/TextureResource.cpp">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/src/resources/TextureResource.h">
+			<Option target="es-core"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/nanosvg/nanosvg.h">
+			<Option target="nanosvg"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/nanosvg/nanosvgrast.h">
+			<Option target="nanosvg"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/nanosvg/src/nanosvg_impl.cpp">
+			<Option target="nanosvg"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/pugixml/src/pugixml.cpp">
+			<Option target="pugixml"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es-core\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es-core\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es-app\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/es-app/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es-app\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/CMake/Packages/FindFreeImage.cmake">
+			<Option virtualFolder="CMake Files\CMake\Packages\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/CMake/Packages/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\CMake\Packages\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/CMake/Packages/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\CMake\Packages\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/CMake/Packages/FindVLC.cmake">
+			<Option virtualFolder="CMake Files\CMake\Packages\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/CMake/Packages/MacroEnsureVersion.cmake">
+			<Option virtualFolder="CMake Files\CMake\Packages\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/CMake/Utils/FindPkgMacros.cmake">
+			<Option virtualFolder="CMake Files\CMake\Utils\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/nanosvg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\nanosvg\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/nanosvg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\nanosvg\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/pugixml/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\pugixml\"/>
+		</Unit>
+		<Unit filename="/home/andy/workspace/EmulationStation/external/pugixml/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\pugixml\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
