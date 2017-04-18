@@ -19,14 +19,18 @@ vector<Game> GameServer::getDownloadableGames() {
     serverStub->GetAvailableGamesList(&context, GameFilters(), &idList);
 
     for (int i = 0; i < idList.ids_size(); i++) {
-        const GameId id = idList.ids(i);
-
-        GameDetails game;
-        grpc::ClientContext getGameContext;
-        serverStub->GetGameDetails(&getGameContext, id, &game);
-
-        games.push_back(Game(game.title(), id.id()));
+        const string id = idList.ids(i).id();
+        games.push_back(getGameDetails(id));
     }
 
     return games;
+}
+
+Game GameServer::getGameDetails(const std::string &id) {
+    GameDetails game;
+    grpc::ClientContext getGameContext;
+    GameId gameId;
+    gameId.set_id(id);
+    serverStub->GetGameDetails(&getGameContext, gameId, &game);
+    return Game(game.title(), id);
 }

@@ -21,6 +21,7 @@ class GameServer {
 public:
     explicit GameServer(std::shared_ptr<grpc::Channel> channel);
     std::vector<Game> getDownloadableGames();
+    Game getGameDetails(const std::string &id);
 
 private:
     std::unique_ptr<AvailableGameServer::AvailableGameServer::Stub> serverStub;
