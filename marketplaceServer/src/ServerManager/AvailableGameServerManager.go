@@ -4,6 +4,7 @@ import (
 	GameServer "AvailableGameServer"
 	"golang.org/x/net/context"
 	"log"
+	"database/sql"
 )
 
 // Data type used to implement the AvailableGameServer
@@ -15,8 +16,14 @@ func runAvailableGameServer() {
 
 func (s *AvailableGameServer) GetAvailableGamesList(ctx context.Context, in *GameServer.GameFilters) (*GameServer.GameIdList, error) {
 	var ids []*(GameServer.GameId) = make([]*(GameServer.GameId), 0)
-	
-	rows, err := db.Query("SELECT ID FROM GAME")
+
+	var rows *sql.Rows
+	var err error
+	if in.Console != "" {
+		rows, err = db.Query("SELECT ID FROM GAME WHERE CONSOLE = $1", in.Console)
+	} else {
+		rows, err = db.Query("SELECT ID FROM GAME")
+	}
 	
 	if err != nil {
 		log.Fatal(err)

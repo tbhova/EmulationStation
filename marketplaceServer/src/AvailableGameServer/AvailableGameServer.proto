@@ -13,7 +13,7 @@ service AvailableGameServer {
 
 // The request query containing the any search filters (none supported yet)
 message GameFilters {
-    string filters = 1;
+    string console = 1;
 }
 
 // The response message containing the list of game ids
