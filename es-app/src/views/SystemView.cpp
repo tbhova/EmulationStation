@@ -1,3 +1,5 @@
+#include <AudioManager.h>
+#include <VolumeControl.h>
 #include "views/SystemView.h"
 #include "SystemData.h"
 #include "Renderer.h"
@@ -134,6 +136,10 @@ bool SystemView::input(InputConfig* config, Input input)
 			if (getSelected()->getName() == "marketplace"){
 				//std::system("~/workspace/buildLW/login_marketplace");
                 runSystemCommand("~/workspace/buildLW/login_marketplace");
+                mWindow->init();
+                VolumeControl::getInstance()->init();
+                AudioManager::getInstance()->init();
+                mWindow->normalizeNextUpdate();
 			}
 			else {
 				ViewController::get()->goToGameList(getSelected());
