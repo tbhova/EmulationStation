@@ -3,6 +3,7 @@
 
 #include <string>
 #include <grpc/grpc.h>
+#include <grpc++/channel.h>
 
 #include "../protos/AvailableGameServer.grpc.pb.h"
 
@@ -22,7 +23,7 @@ public:
     std::vector<Game> getDownloadableGames();
 
 private:
-    std::unique_ptr<AvailableGameServer::AvialableGameServer::Stub> serverStub;
+    std::unique_ptr<AvailableGameServer::AvailableGameServer::Stub> serverStub;
 };
 
 
