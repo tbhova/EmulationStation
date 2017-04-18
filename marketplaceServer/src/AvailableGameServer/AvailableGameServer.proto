@@ -6,7 +6,7 @@ option java_outer_classname = "AvailableGameServerProto";
 package AvailableGameServer;
 
 // The user service definition.
-service AvialableGameServer {
+service AvailableGameServer {
     rpc GetAvailableGamesList (GameFilters) returns (GameIdList) {}
     rpc GetGameDetails (GameId) returns (GameDetails) {}
 }

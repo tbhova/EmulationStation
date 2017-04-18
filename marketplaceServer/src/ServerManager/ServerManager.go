@@ -13,11 +13,11 @@ import (
 
 var s *grpc.Server
 
-var db *sql.DB = nil
+var db *sql.DB
 
 func init() {
 	var err error
-	db, err = sql.Open("postgres", "user=postgres password=hespw123 dbname=content sslmode=verify-full")
+	db, err = sql.Open("postgres", "host=localhost user=postgres password=hespw123 dbname=content sslmode=require")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -29,9 +29,9 @@ func init() {
 	s = grpc.NewServer()
 	pb.RegisterGreeterServer(s, &GreetingServer{})
 	
-	RunLoginServer()
-	RunUserDownloadServer()
-	RunAvailableGameServer()
+	runLoginServer()
+	runUserDownloadServer()
+	runAvailableGameServer()
 	
 	// Register reflection service on gRPC GreetingServer.
 	reflection.Register(s)

@@ -11,7 +11,7 @@ import (
 
 type UserDownloadServer struct{}
 
-func RunUserDownloadServer() {
+func runUserDownloadServer() {
 	DownloadServer.RegisterUserDownloadServerServer(s, &UserDownloadServer{})
 }
 
@@ -21,7 +21,7 @@ func (s *UserDownloadServer) DownloadGame(ctx context.Context, in *DownloadServe
 	response.S3DownloadLink = ""
 	
 	// Check for valid user credentials
-	var login *LoginServer
+	var login *LoginServer = new(LoginServer)
 	loginResponse, err := login.UserLogin(context.Background(), &(UserServer.LoginRequest{Username: in.Username, Password: in.Password}))
 	if err != nil || loginResponse.Status != UserServer.LoginReply_OK {
 		log.Printf("DownloadGame: invalid credentials provided for user %s", in.Username)
@@ -32,7 +32,7 @@ func (s *UserDownloadServer) DownloadGame(ctx context.Context, in *DownloadServe
 	
 	// check for valid purchase by the user
 	var purchaseId string
-	err = db.QueryRow("SELECT ID FROM PURCHASE WHERE USER_ID = ? AND GAME_ID = ?", userId, in.GameId).Scan(&purchaseId)
+	err = db.QueryRow("SELECT ID FROM PURCHASE WHERE USER_ID = $1 AND GAME_ID = $2", userId, in.GameId).Scan(&purchaseId)
 	switch {
 	case err == sql.ErrNoRows:
 		log.Printf("User %s has not purchased game with id %s", in.Username, in.GameId)
@@ -42,7 +42,7 @@ func (s *UserDownloadServer) DownloadGame(ctx context.Context, in *DownloadServe
 	}
 	
 	// get S3 link
-	err = db.QueryRow("SELECT S3LINK FROM GAME WHERE ID = ?", in.GameId).Scan(&(response.S3DownloadLink))
+	err = db.QueryRow("SELECT S3LINK FROM GAME WHERE ID = $1", in.GameId).Scan(&(response.S3DownloadLink))
 	if err != nil {
 		return &response, err
 	}
@@ -54,7 +54,7 @@ func (s *UserDownloadServer) DownloadGame(ctx context.Context, in *DownloadServe
 func (s *UserDownloadServer) AvailableDownloads(ctx context.Context, in *DownloadServer.UserDownloadListRequest) (*DownloadServer.DownloadsList, error) {
 	var downloads []*DownloadServer.Game = make([]*DownloadServer.Game, 0)
 	
-	rows, err := db.Query("SELECT GAME_ID FROM PURCHASE WHERE USER_ID = ?", in.Username)
+	rows, err := db.Query("SELECT GAME_ID FROM PURCHASE WHERE USER_ID = $1", in.Username)
 	if err != nil {
 		log.Fatal(err)
 		return nil, err
