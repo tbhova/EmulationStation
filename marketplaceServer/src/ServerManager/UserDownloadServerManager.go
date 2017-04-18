@@ -7,6 +7,7 @@ import (
 	"UserServer"
 	"errors"
 	"database/sql"
+	"fmt"
 )
 
 type UserDownloadServer struct{}
@@ -53,8 +54,18 @@ func (s *UserDownloadServer) DownloadGame(ctx context.Context, in *DownloadServe
 
 func (s *UserDownloadServer) AvailableDownloads(ctx context.Context, in *DownloadServer.UserDownloadListRequest) (*DownloadServer.DownloadsList, error) {
 	var downloads []*DownloadServer.Game = make([]*DownloadServer.Game, 0)
-	
-	rows, err := db.Query("SELECT GAME_ID FROM PURCHASE WHERE USER_ID = $1", in.Username)
+
+	var userId string
+	err := db.QueryRow("SELECT ID FROM USERS WHERE USERNAME = $1", in.Username).Scan(&userId);
+
+	switch {
+	case err == sql.ErrNoRows:
+		return &DownloadServer.DownloadsList{Games: downloads}, errors.New(fmt.Sprintf("User %s does not exist", in.Username));
+	case err != nil:
+		return &DownloadServer.DownloadsList{Games: downloads}, err
+	}
+
+	rows, err := db.Query("SELECT GAME_ID FROM PURCHASE WHERE USER_ID = $1", userId)
 	if err != nil {
 		log.Fatal(err)
 		return nil, err

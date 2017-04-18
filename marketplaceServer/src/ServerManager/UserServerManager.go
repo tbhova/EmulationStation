@@ -20,7 +20,7 @@ func (s *LoginServer) CheckUserExists(ctx context.Context, in *UserServer.UserQu
 	reply.EmailExists = false
 	reply.UsernameExists = false
 	
-	rows, err := db.Query("SELECT USERNAME FROM USERS WHERE USERNAME = $1 OR EMAIL = $2", in.Username)
+	rows, err := db.Query("SELECT USERNAME FROM USERS WHERE USERNAME = $1 OR EMAIL = $2", in.Username, in.Email)
 	if err != nil {
 		log.Fatal(err)
 		return reply, err
@@ -79,7 +79,7 @@ func (s *LoginServer) UserLogin(ctx context.Context, in *UserServer.LoginRequest
 	}
 	
 	var userId string
-	err = db.QueryRow("SELECT ID FROM USER WHERE USER = $1 AND PASSWORD = $2").Scan(&userId)
+	err = db.QueryRow("SELECT ID FROM USERS WHERE USERNAME = $1 AND PASSWORD = $2", in.Username, in.Password).Scan(&userId)
 	
 	switch {
 	case err == sql.ErrNoRows:
