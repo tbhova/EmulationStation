@@ -21,7 +21,6 @@ public:
     explicit GameServer(std::shared_ptr<grpc::Channel> channel);
     std::vector<Game> getDownloadableGames();
 
-
 private:
     std::unique_ptr<AvailableGameServer::AvialableGameServer::Stub> serverStub;
 };

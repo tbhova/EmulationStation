@@ -1,7 +1,6 @@
 #include "GameServer.h"
 
 #include <grpc++/channel.h>
-#include <grpc++/create_channel.h>
 
 using namespace std;
 
