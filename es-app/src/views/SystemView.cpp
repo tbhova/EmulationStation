@@ -132,7 +132,7 @@ bool SystemView::input(InputConfig* config, Input input)
 		{
 			stopScrolling();
 			if (getSelected()->getName() == "marketplace"){
-				std::system("/usr/bin/gimp");
+				std::system("~/workspace/buildLW/login_marketplace");
 			}
 			else {
 				ViewController::get()->goToGameList(getSelected());
