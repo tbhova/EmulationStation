@@ -133,6 +133,11 @@ bool SystemView::input(InputConfig* config, Input input)
 		if(config->isMappedTo("a", input))
 		{
 			stopScrolling();
+
+            AudioManager::getInstance()->deinit();
+            VolumeControl::getInstance()->deinit();
+            mWindow->deinit();
+
 			if (getSelected()->getName() == "marketplace"){
 				//std::system("~/workspace/buildLW/login_marketplace");
                 runSystemCommand("~/workspace/buildLW/login_marketplace");
