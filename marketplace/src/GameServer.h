@@ -6,10 +6,21 @@
 
 #include "../protos/AvailableGameServer.grpc.pb.h"
 
+struct Game {
+    Game(const std::string name, const std::string id) : name(name), id(id) {}
+
+    bool operator==(const Game &other) const {
+        return other.id == id && other.name == name;
+    }
+
+    std::string name, id;
+};
+
 class GameServer {
 public:
-    GameServer();
     explicit GameServer(std::shared_ptr<grpc::Channel> channel);
+    std::vector<Game> getDownloadableGames();
+
 
 private:
     std::unique_ptr<AvailableGameServer::AvialableGameServer::Stub> serverStub;

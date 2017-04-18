@@ -1,11 +1,7 @@
 #include "GameServer.h"
-//#include "../protos/AvailableGameServer.pb.h"
 
-#include <grpc/grpc.h>
 #include <grpc++/channel.h>
-#include <grpc++/client_context.h>
 #include <grpc++/create_channel.h>
-#include <grpc++/security/credentials.h>
 
 using namespace std;
 
@@ -15,9 +11,26 @@ using AvailableGameServer::GameId;
 using AvailableGameServer::GameIdList;
 using AvailableGameServer::AvialableGameServer;
 
-//GameServer::GameServer() : GameServer("127.0.0.1") {}
-
 GameServer::GameServer(shared_ptr<grpc::Channel> channel)
-        : serverStub(AvialableGameServer::NewStub(channel)) {
-//    AvailableGameServer::
+        : serverStub(AvialableGameServer::NewStub(channel)) {}
+
+vector<Game> GameServer::getDownloadableGames() {
+    vector<Game> games = vector<Game>();
+
+    grpc::ClientContext context;
+
+    GameIdList idList;
+    serverStub->GetAvailableGamesList(&context, GameFilters(), &idList);
+
+    for (int i = 0; i < idList.ids_size(); i++) {
+        const GameId id = idList.ids(i);
+
+        GameDetails game;
+        grpc::ClientContext getGameContext;
+        serverStub->GetGameDetails(&getGameContext, id, &game);
+
+        games.push_back(Game(game.title(), id.id()));
+    }
+
+    return games;
 }
