@@ -10,13 +10,15 @@ using AvailableGameServer::GameIdList;
 GameServer::GameServer(shared_ptr<grpc::Channel> channel)
         : serverStub(AvailableGameServer::AvailableGameServer::NewStub(channel)) {}
 
-vector<Game> GameServer::getDownloadableGames() {
+vector<Game> GameServer::getDownloadableGames(const string console) {
     vector<Game> games = vector<Game>();
 
     grpc::ClientContext context;
 
+    GameFilters filters;
+    filters.set_console(console);
     GameIdList idList;
-    serverStub->GetAvailableGamesList(&context, GameFilters(), &idList);
+    serverStub->GetAvailableGamesList(&context, filters, &idList);
 
     for (int i = 0; i < idList.ids_size(); i++) {
         const string id = idList.ids(i).id();

@@ -20,7 +20,7 @@ struct Game {
 class GameServer {
 public:
     explicit GameServer(std::shared_ptr<grpc::Channel> channel);
-    std::vector<Game> getDownloadableGames();
+    std::vector<Game> getDownloadableGames(const std::string console);
     Game getGameDetails(const std::string &id);
 
 private:
