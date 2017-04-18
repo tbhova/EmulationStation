@@ -11,7 +11,16 @@ class LoginServer {
 public:
     explicit LoginServer(std::shared_ptr<grpc::Channel> channel);
 
+    bool usernameAvailable(const std::string username);
+    bool emailAvailable(const std::string email);
+
+    std::string login(const std::string username, const std::string password);
+
+
+
 private:
+    UserServer::UsernameAvailable checkUser(const std::string username, const std::string email);
+
     std::unique_ptr<UserServer::UserServer::Stub> serverStub;
 };
 
