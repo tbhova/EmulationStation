@@ -18,7 +18,7 @@ set(test_SOURCES
         src/gTestMain.cpp)
 
 set(test_HEADERS
-        src/TestUserServer.h src/TestDownloadServer.h src/TestGameServer.h)
+        src/TestLoginServer.h src/TestDownloadServer.h src/TestGameServer.h)
 
 find_package(Protobuf REQUIRED)
 include_directories(${PROTOBUF_INCLUDE_DIRS})

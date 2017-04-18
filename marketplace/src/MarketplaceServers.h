@@ -2,7 +2,7 @@
 #define EMULATIONSTATION_ALL_MARKETPLACESERVERS_H
 
 #include "GameServer.h"
-#include "UserServer.h"
+#include "LoginServer.h"
 #include "DownloadServer.h"
 
 class MarketplaceServers {
@@ -10,12 +10,12 @@ public:
     MarketplaceServers();
     ~MarketplaceServers();
     GameServer* gameServer() { return  gameClient; }
-    UserServer* userServer() { return userClient; }
+    LoginServer* userServer() { return userClient; }
     DownloadServer* downloadServer() { return downloadClient; }
 
 private:
     GameServer *gameClient;
-    UserServer *userClient;
+    LoginServer *userClient;
     DownloadServer *downloadClient;
 };
 

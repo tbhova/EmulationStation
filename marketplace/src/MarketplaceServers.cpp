@@ -8,7 +8,7 @@ MarketplaceServers::MarketplaceServers() {
     shared_ptr<grpc::Channel> channel = grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials());
     gameClient = new GameServer(channel);
     downloadClient = new DownloadServer(channel);
-    userClient = new UserServer(channel);
+    userClient = new LoginServer(channel);
 }
 
 MarketplaceServers::~MarketplaceServers() {

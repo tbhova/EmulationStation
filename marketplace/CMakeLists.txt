@@ -3,11 +3,11 @@ project("marketplace")
 set(marketplace_SOURCES
         src/GameServer.cpp
         src/DownloadServer.cpp
-        src/UserServer.cpp
+        src/LoginServer.cpp
         src/MarketplaceServers.cpp)
 set(marketplace_HEADERS
         src/GameServer.h
-        src/UserServer.h
+        src/LoginServer.h
         src/DownloadServer.h
         src/MarketplaceServers.h)
 

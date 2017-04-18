@@ -2,9 +2,9 @@
 
 //#include "../../marketplace/src/DownloadServer.cpp"
 //#include "../../marketplace/src/GameServer.cpp"
-//#include "../../marketplace/src/UserServer.cpp"
+//#include "../../marketplace/src/LoginServer.cpp"
 
-#include "TestUserServer.h"
+#include "TestLoginServer.h"
 #include "TestDownloadServer.h"
 #include "TestGameServer.h"
 
