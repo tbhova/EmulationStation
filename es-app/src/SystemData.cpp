@@ -106,7 +106,9 @@ std::string escapePath(const boost::filesystem::path& path)
 
 void SystemData::launchGame(Window* window, FileData* game)
 {
-	LOG(LogInfo) << "Attempting to launch game...";
+	//TODO: we could also just change the code here so that we initiate the transfer here
+
+    LOG(LogInfo) << "Attempting to launch game...";
 
 	AudioManager::getInstance()->deinit();
 	VolumeControl::getInstance()->deinit();
@@ -183,7 +185,13 @@ void SystemData::populateFolder(FileData* folder)
 		//fyi, folders *can* also match the extension and be added as games - this is mostly just to support higan
 		//see issue #75: https://github.com/Aloshi/EmulationStation/issues/75
 
-		isGame = false;
+        //TODO: follow a concept similar to this in order to add games to the thing
+        FileData* newGame2 = new FileData(GAME, "Inserted Game", this);
+        folder->addChild(newGame2);
+
+
+
+        isGame = false;
 		if(std::find(mSearchExtensions.begin(), mSearchExtensions.end(), extension) != mSearchExtensions.end())
 		{
 			FileData* newGame = new FileData(GAME, filePath.generic_string(), this);

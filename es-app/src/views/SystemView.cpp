@@ -134,12 +134,12 @@ bool SystemView::input(InputConfig* config, Input input)
 		{
 			stopScrolling();
 
-            AudioManager::getInstance()->deinit();
-            VolumeControl::getInstance()->deinit();
-            mWindow->deinit();
+
 
 			if (getSelected()->getName() == "marketplace"){
-				//std::system("~/workspace/buildLW/login_marketplace");
+                AudioManager::getInstance()->deinit();
+                VolumeControl::getInstance()->deinit();
+                mWindow->deinit();
                 runSystemCommand("~/workspace/buildLW/login_marketplace");
                 mWindow->init();
                 VolumeControl::getInstance()->init();
