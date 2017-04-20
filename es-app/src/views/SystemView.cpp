@@ -145,9 +145,9 @@ bool SystemView::input(InputConfig* config, Input input)
 				AudioManager::getInstance()->init();
 				mWindow->normalizeNextUpdate();
 
-			        for(auto it = SystemData::sSystemVector.begin(); it != SystemData::sSystemVector.end(); it++) {
-        		            (*it)->updateSystem();
-        		        }
+                for(auto it = SystemData::sSystemVector.begin(); it != SystemData::sSystemVector.end(); it++) {
+                    (*it)->updateSystem();
+                }
 			}
 			else {
 				ViewController::get()->goToGameList(getSelected());
