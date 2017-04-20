@@ -84,9 +84,6 @@ void BasicGameListView::setCursor(FileData* cursor)
 void BasicGameListView::launch(FileData* game)
 {
 	ViewController::get()->launch(game);
-
-	//TODO: This is where we launch, so we can initiate the transfer here instead
-
 }
 
 void BasicGameListView::remove(FileData *game)
