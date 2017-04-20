@@ -137,14 +137,14 @@ bool SystemView::input(InputConfig* config, Input input)
 
 
 			if (getSelected()->getName() == "marketplace"){
-                AudioManager::getInstance()->deinit();
-                VolumeControl::getInstance()->deinit();
-                mWindow->deinit();
-                runSystemCommand("~/workspace/buildLW/login_marketplace");
-                mWindow->init();
-                VolumeControl::getInstance()->init();
-                AudioManager::getInstance()->init();
-                mWindow->normalizeNextUpdate();
+				AudioManager::getInstance()->deinit();
+				VolumeControl::getInstance()->deinit();
+				mWindow->deinit();
+				runSystemCommand("~/workspace/buildLW/login_marketplace");
+				mWindow->init();
+				VolumeControl::getInstance()->init();
+				AudioManager::getInstance()->init();
+				mWindow->normalizeNextUpdate();
 			}
 			else {
 				ViewController::get()->goToGameList(getSelected());
