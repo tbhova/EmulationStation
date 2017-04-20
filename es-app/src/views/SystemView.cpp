@@ -7,7 +7,6 @@
 #include "Window.h"
 #include "views/ViewController.h"
 #include "animations/LambdaAnimation.h"
-#include "SystemData.h"
 #include "Settings.h"
 #include "Util.h"
 
@@ -145,6 +144,10 @@ bool SystemView::input(InputConfig* config, Input input)
                 VolumeControl::getInstance()->init();
                 AudioManager::getInstance()->init();
                 mWindow->normalizeNextUpdate();
+
+                for(auto it = SystemData::sSystemVector.begin(); it != SystemData::sSystemVector.end(); it++) {
+                    (*it)->updateSystem();
+                }
 			}
 			else {
 				ViewController::get()->goToGameList(getSelected());
