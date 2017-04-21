@@ -146,6 +146,11 @@ void SystemData::launchGame(Window* window, FileData* game)
 
 void SystemData::populateFolder(FileData* folder)
 {
+    if (mName == "marketplace") {
+        folder->addChild(new FileData(GAME, "marketplace", this));
+        folder->addChild(new FileData(GAME, "", this));
+        return;
+    }
 	const fs::path& folderPath = folder->getPath();
 	if(!fs::is_directory(folderPath))
 	{
