@@ -144,10 +144,7 @@ bool SystemView::input(InputConfig* config, Input input)
 				VolumeControl::getInstance()->init();
 				AudioManager::getInstance()->init();
 				mWindow->normalizeNextUpdate();
-
-                for(auto it = SystemData::sSystemVector.begin(); it != SystemData::sSystemVector.end(); it++) {
-                    (*it)->updateSystem();
-                }
+				execl("./emulationstation", "--debug", (const char*)NULL);
 			}
 			else {
 				ViewController::get()->goToGameList(getSelected());
